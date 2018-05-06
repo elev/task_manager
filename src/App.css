@@ -1,0 +1,21 @@
+.App {
+}
+
+.App__Header {
+  width: 100%;
+  text-align: center;
+}
+
+.App__Content {
+  width: 100%;
+}
+
+.App__Gutter {
+  display: inline-block;
+  width: 30%;
+}
+
+.App__Main {
+  display: inline-block;
+  width: 79%;
+}

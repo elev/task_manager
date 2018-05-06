@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "ID": 1,
+      "title": "Build app",
+      "priority": 1,
+      "subTasks": [2, 3]
+    },
+    {
+      "ID": 2,
+      "title": "Write requirements",
+      "priority": 1,
+      "subTasks": []
+    },
+    {
+      "ID": 3,
+      "title": "Create Components",
+      "priority": 1,
+      "subTasks": []
+    },
+    {
+      "ID": 4,
+      "title": "Do Taxes",
+      "priority": 3,
+      "subTasks": []
+    }
+  ]
+}
