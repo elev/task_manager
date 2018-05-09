@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import 'normalize.css/normalize.css';
 import './App.css';
 import TaskList from './TaskList';
-import axios from 'axios';
+import CreateForm from './CreateForm';
 
 class App extends Component {
   constructor() {
     super();
+
     this.state = {
       tasks: []
     };
+
+    this.createNew = this.createNew.bind(this);
   }
 
   componentDidMount() {
@@ -44,6 +48,11 @@ class App extends Component {
 
   // we want to see these update when you create a new one.
 
+  createNew(newTask) {
+    console.log(newTask);
+    this.setState({ tasks: this.state.tasks.concat(newTask) });
+  }
+
   render() {
     return (
       <div className="App">
@@ -54,7 +63,9 @@ class App extends Component {
           <div className="App__Gutter">
             <TaskList tasks={this.state.tasks} />
           </div>
-          <div className="App__Main" />
+          <div className="App__Main">
+            <CreateForm onSubmitMethod={this.createNew} />
+          </div>
         </div>
       </div>
     );
