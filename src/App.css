@@ -18,4 +18,12 @@
 .App__Main {
   display: inline-block;
   width: 69%;
+  vertical-align: top;
+}
+
+.App__Task-Button {
+  border: 1px solid black;
+  cursor: pointer;
+  min-width: 200px;
+  padding: 8px 4px;
 }

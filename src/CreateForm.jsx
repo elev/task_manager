@@ -6,7 +6,7 @@ class CreateButton extends Component {
 
     this.state = {
       newTask: {
-        ID: 22, // get unique value
+        ID: 22,
         title: '',
         priority: 2,
         subtasks: []

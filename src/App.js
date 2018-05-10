@@ -26,27 +26,6 @@ class App extends Component {
         console.log(error);
       });
   }
-  // Make each task Editable
-
-  // Make a create Task Button
-
-  // build a component for create button
-
-  // may want to make "tasks" available on the app level then change then pass them in as props on the list level...
-
-  // it will have create form inside of it but it will be hidden
-
-  // let it slide into place when you click or double click the create button
-
-  // follow the template structure in the other application.
-
-  //
-
-  //
-
-  // also create a "task list" form that lists them all out
-
-  // we want to see these update when you create a new one.
 
   createNew(newTask) {
     console.log(newTask);
